@@ -1,21 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TV Show Project | My Name (My GitHub username)</title>
-    <link href="style.css" rel="stylesheet" />
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-  </head>
 
-  <body>
-    <div id="root">
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TV Show Project |SOBIA WAQAR (My GitHub sobiawaqar)</title>
+  <link href="style.css" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+</head>
 
-    <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
-    <script src="episodes.js"></script>
+<body>
+  <header>
+    <button id="homeBtn">HOMEPAGE</button>
+    <select name="select" class="select" id="select-show">
+      <option value=" " id="show-option">Select your Favorite Show</option>
+    </select>
+    <nav class="nav-bar" id="nav-bar">
+      <select name="select" class="select" id="select-episode">
+        <option value=" ">Select your Favorite Episode</option>
+      </select>
+      <input type="text" name="search" class="form-control" type="text" placeholder="Enter your search here"
+        id="search">
+      <span id="counter"></span>
+    </nav>
+  </header>
+  <section>
+    <div id="root"></div>
+    <button onclick="goTopFunction()" id="myBtn" title="back to top">Back To Top</button>
+  </section>
+</body>
+<footer><strong>All the stuff used in this website came from <a href="TVMaze.com"> TVMaze.com</a></strong>
+<h1>TV Show Project -Sobia Waqar</h1>
+</footer>
 
-    <!-- Loads YOUR javascript code -->
-    <script src="script.js"></script>
-  </body>
+<!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
+<script src="episodes.js"></script>
+
+<!-- Loads YOUR javascript code -->
+<script src="script.js"></script>
+<!--Loads link to display all shows-->
+<script src="shows.js"></script>
+</body>
+
 </html>
